@@ -1,0 +1,12 @@
+apiVersion: app.github.com/v1
+kind: Myapp
+metadata:
+  name: myapp-sample
+  annotations:
+spec:
+  replicas: 3
+  image: register.buleye.com:5000/buleye/myapp-nginx:v1.0.0
+  ports:
+    - port: 80
+      targetPort: 80
+      nodePort: 30004
