@@ -1,0 +1,7 @@
+domain: github.com
+repo: github.com/ybooks240
+resources:
+- group: app
+  kind: Myapp
+  version: v1
+version: "2"
